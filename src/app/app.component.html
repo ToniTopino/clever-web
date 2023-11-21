@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="logo_container">
+    <img class="logo" src="assets/image/logo.png" alt="logo">
+    <h1 class="title">Clever Brain App</h1>
+  </div>
+  <div class="download_btn" *ngIf="activeDownloadBtn" (click)="appStoreLink('top')">
+    <img src="assets/icon/apple-icon.png" alt="apple">
+    <span>Download the app</span>
+  </div>
+</div>
+<div class="background_container">
+  <div class="background_container-gradient"></div>
+</div>
+
+<main class="router-outlet" role="main" [@fadeAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
+

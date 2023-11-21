@@ -1,0 +1,370 @@
+.payment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: #131325;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.payment_container {
+  width: 898px;
+  height: auto;
+  background: #090A15;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  input::placeholder {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.1;
+    margin-top: 2px;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 49px;
+    img {
+      width: 42px;
+      margin-right: 8px;
+    }
+    h3 {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 22px;
+      color: #EAECF4;
+    }
+  }
+  .card-details-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    h3 {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+  .card-data {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .card-number {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      img {
+        width: 40px;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+      }
+      span {
+        font-family: 'Signika', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+      }
+      input {
+        font-family: 'Signika', sans-serif;
+        background: #0F0F1E;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        width: 450px;
+        height: 56px;
+        padding: 0 10px 0 16px;
+        color: #ffffff;
+      }
+      input:focus-visible {
+        outline: none;
+        border: 2px solid #0083FF;
+        padding: 0 8px 0 15px;
+      }
+    }
+    .card-number-details {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      margin-top: 16px;
+      .card-expires {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 16px;
+        span {
+          font-family: 'Signika', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+          margin-bottom: 8px;
+        }
+        input {
+          font-family: 'Signika', sans-serif;
+          background: #0F0F1E;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 8px;
+          width: 217px;
+          height: 56px;
+          padding: 0 10px 0 16px;
+          color: #ffffff;
+        }
+        input:focus-visible {
+          outline: none;
+          border: 2px solid #0083FF;
+          padding: 0 8px 0 15px;
+        }
+      }
+      .security-number {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        img {
+          width: 40px;
+          position: absolute;
+          right: 10px;
+          top: 40px;
+        }
+        span {
+          font-family: 'Signika', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+          margin-bottom: 8px;
+        }
+        input {
+          font-family: 'Signika', sans-serif;
+          background: #0F0F1E;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 8px;
+          width: 217px;
+          height: 56px;
+          padding: 0 10px 0 16px;
+          color: #ffffff;
+        }
+        input:focus-visible {
+          outline: none;
+          border: 2px solid #0083FF;
+          padding: 0 8px 0 15px;
+        }
+      }
+    }
+    .card-email {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 16px;
+      span {
+        font-family: 'Signika', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+      }
+      input {
+        font-family: 'Signika', sans-serif;
+        background: #0F0F1E;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        width: 450px;
+        height: 56px;
+        padding: 0 10px 0 16px;
+        color: #ffffff;
+      }
+      input:focus-visible {
+        outline: none;
+        border: 2px solid #0083FF;
+        padding: 0 8px 0 15px;
+      }
+    }
+  }
+  .pay-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background: #D325FF;
+    border-radius: 60px;
+    width: 349px;
+    height: 56px;
+    outline: none;
+    border: none;
+    opacity: 0.24;
+    .pay-button {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+  .total-price-container {
+    width: 349px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    span {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 20px;
+      line-height: 25px;
+      color: #FFFFFF;
+    }
+  }
+  .info-pay-container {
+    width: 458px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+    margin-bottom: 55px;
+    p {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+      span {
+        color: #EB29D0;
+        cursor: pointer;
+      }
+    }
+    p:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  .close-payment {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 8px;
+    left: 8px;
+    background-image: url("../../assets/icon/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .close-payment:hover {
+    transform: rotate(180deg);
+  }
+}
+
+.about-home {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 0 20%;
+  .about-home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      text-align: left;
+      color: #ffffff;
+      width: auto;
+      margin: 0;
+      opacity: 0.4;
+      font-size: 14px;
+    }
+    h5 {
+      color: #ffffff;
+      margin-bottom: 10px;
+      opacity: 0.9;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .payment {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .payment_container {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    .card-data {
+      .card-number {
+        width: 100%;
+        input{
+          width: 100%;
+        }
+      }
+      .card-number-details {
+        width: 100%;
+        .card-expires {
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+        .security-number {
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
+      .card-email {
+        width: 100%;
+        input{
+          width: 100%;
+        }
+      }
+    }
+    .info-pay-container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-home {
+    padding: 0;
+    align-items: flex-start;
+  }
+}
