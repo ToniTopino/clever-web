@@ -9,8 +9,8 @@ import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   { path: '', component: SurveyComponent },
-  { path: 'loading', component: LoadingComponent },
-  { path: 'home', component: HomeComponent },
+  // { path: 'loading', component: LoadingComponent },
+  // { path: 'home', component: HomeComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms-of-use', component: TermsConditionsComponent },
   { path: 'payment', component: PaymentComponent },
