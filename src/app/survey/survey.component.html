@@ -1,0 +1,244 @@
+<div class="survey_container">
+  <div class="survey_container__fon"></div>
+  <div class="survey_container__item">
+    <c-carousel
+      data-coreui-ride="carousel"
+      id="carouselExampleControls"
+      (itemChange)="onItemChangeFirst($event)"
+      [touch]="false"
+      [interval]="0"
+      [animate]="true"
+      [wrap]="false"
+      transition="crossfade"
+      [activeIndex]=activeIndexCarouselFirst
+    >
+    <div class="">
+      <div class="number_survey">
+        <div class="number_survey-line"></div>
+        <div class="number_survey__level-line" [style.width.%]="width"></div>
+      </div>
+      <div class="number_survey-info">
+        <div [ngClass]="{'notPrevBtn': activeIndexCarousel}"></div>
+        <div [ngClass]="{'notPrevBtn': !activeIndexCarousel}">
+          <c-carousel-control caption="Previous" direction="prev">
+            <img class="number_survey-info-img" src="assets/icon/arrow-left.png" alt="" (click)="prevActiveIndexCarouselFirst()">
+          </c-carousel-control>
+        </div>
+
+
+        <div class="number_list">
+          <span class="number_list-active">{{activeIndexCarousel + 1}}</span>
+          <span class="number_list">/</span>
+          <span class="number_list">6</span>
+        </div>
+      </div>
+    </div>
+
+
+
+      <c-carousel-inner>
+
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>Challenge your brain</span>
+          </div>
+
+          <div class="survey_container__item-first_image">
+            <img src="assets/image/Pic-1@2x.png" alt="">
+          </div>
+
+        </c-carousel-item>
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>Enhance your skills</span>
+          </div>
+
+          <div class="survey_container__item-first_image">
+            <img src="assets/image/Pic-2@2x.png" alt="">
+          </div>
+
+        </c-carousel-item>
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>Play bite-sized games</span>
+          </div>
+
+          <div class="survey_container__item-first_image">
+            <img src="assets/image/Pic-3@2x.png" alt="">
+          </div>
+
+        </c-carousel-item>
+
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>Select your gender</span>
+          </div>
+
+          <div class="survey_container__item-first_image-gender">
+            <img src={{activeImageGender}} alt="">
+          </div>
+
+          <div class="selection_box_container">
+            <div
+              *ngFor="let item of surveyService.oneSurvey"
+              (click)="activeSurvey(item.title, 1, surveyService.oneSurvey)"
+              [ngClass]="{'selection_box-item': !item.active, 'selection_box-item-active' : item.active }"
+            >
+              <span class="selection_box-item__title">{{item.title}}</span>
+            </div>
+          </div>
+
+        </c-carousel-item>
+
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>Select your age</span>
+          </div>
+
+          <div class="survey_container__item-first_image-gender">
+            <img src={{activeImageGender}} alt="">
+          </div>
+
+          <div class="selection_box_container">
+            <div
+              *ngFor="let item of surveyService.twoSurvey"
+              (click)="activeSurvey(item.title, 2, surveyService.twoSurvey)"
+              [ngClass]="{'selection_box-item': !item.active, 'selection_box-item-active' : item.active }"
+            >
+              <span class="selection_box-item__title">{{item.title}}</span>
+            </div>
+          </div>
+
+        </c-carousel-item>
+
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>What’s your primary goal?</span>
+          </div>
+
+          <div class="survey_container__item-first_image-gender">
+            <img src={{activeImageGender}} alt="">
+          </div>
+
+          <div class="selection_box_container">
+            <div
+              *ngFor="let item of surveyService.treeSurvey"
+              (click)="activeSurvey(item.title, 3, surveyService.treeSurvey)"
+              [ngClass]="{'selection_box-item': !item.active, 'selection_box-item-active' : item.active }"
+            >
+            <span class="selection_box-item__title">{{item.title}}</span>
+            <span class="selection_box-item__btn" *ngIf="!item.active"></span>
+            <span class="selection_box-item__btn-active" *ngIf="item.active">
+              <img src="assets/icon/ok.png" alt="">
+            </span>
+            </div>
+          </div>
+
+        </c-carousel-item>
+
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>What areas would you like to improve?</span>
+          </div>
+
+          <div class="survey_container__item-first_image-gender">
+            <img src={{activeImageGender}} alt="">
+          </div>
+
+          <div class="selection_box_container__last">
+            <div
+              *ngFor="let item of surveyService.forSurvey"
+              (click)="activeSurvey(item.title, 4, surveyService.forSurvey)"
+              [ngClass]="{'selection_box-item': !item.active, 'selection_box-item-active__last' : item.active }"
+            >
+            <span class="selection_box-item__title" style="width:82px;">{{item.title}}</span>
+            <span class="selection_box-item__btn" *ngIf="!item.active"></span>
+            <span class="selection_box-item__btn-active" *ngIf="item.active">
+              <img src="assets/icon/ok.png" alt="">
+            </span>
+            </div>
+          </div>
+
+        </c-carousel-item>
+
+        <c-carousel-item>
+
+          <div class="survey_container__item-title">
+            <span>Pick your brain-training plan</span>
+          </div>
+
+          <div class="survey_container__item-first_image-gender">
+            <img src={{activeImageGender}} alt="">
+          </div>
+
+          <div class="selection_box_container">
+            <div
+              *ngFor="let item of surveyService.fiveSurvey"
+              (click)="activeSurvey(item.title, 5, surveyService.fiveSurvey)"
+              [ngClass]="{'selection_box-item': !item.active, 'selection_box-item-active' : item.active }"
+              style="height: 64px;"
+            >
+              <div class="selection_box-item__title-container">
+                <span class="selection_box-item__title">{{item.title}}</span>
+                <p class="selection_box-item__description">{{item.description_start}} <b>{{item.description}}</b> {{item.description_end}}</p>
+              </div>
+
+              <span class="selection_box-item__btn" *ngIf="!item.active"></span>
+              <span class="selection_box-item__btn-active" *ngIf="item.active">
+                <img src="assets/icon/ok.png" alt="">
+              </span>
+            </div>
+          </div>
+        </c-carousel-item>
+
+      </c-carousel-inner>
+      <div class="dots-carousel-first">
+        <div
+          [style.background]="activeIndexCarouselFirst == 0 ? '#FFFFFF' : '#FFFFFF66'"
+          [style.opacity]="showDoteCarusel ? '1' : '0'"
+          class="dots-carousel-first__item">
+        </div>
+        <div
+          [style.background]="activeIndexCarouselFirst == 1 ? '#FFFFFF' : '#FFFFFF66'"
+          [style.opacity]="showDoteCarusel ? '1' : '0'"
+          class="dots-carousel-first__item">
+        </div>
+        <div
+          [style.background]="activeIndexCarouselFirst == 2 ? '#FFFFFF' : '#FFFFFF66'"
+          [style.opacity]="showDoteCarusel ? '1' : '0'"
+          class="dots-carousel-first__item">
+        </div>
+      </div>
+      <div *ngIf="termsShow" class="termsAndPolicy">
+        <span (click)="termsLink()">Terms of Service</span>
+         &
+        <span (click)="privacyLink()">Privacy Policy</span>
+      </div>
+      <c-carousel-control *ngIf="controlNext" caption="Next" direction="next" (click)="nextActiveIndexCarouselFirst()">
+        <div
+          class="selection_box-btn-approve"
+          [ngClass]="{'selection_box-btn-approve': nameButtom === 'Next', 'selection_box-btn' : nameButtom !== 'Next' || '3 DAYS FREE TRIAL' }"
+        >
+          {{nameButtom}}
+        </div>
+      </c-carousel-control>
+      <div class="selection_box-btn-container" role="button"  *ngIf="!controlNext">
+        <div
+          class="selection_box-btn-approve"
+          (click)="lastBtnControll()"
+          [ngClass]="{'selection_box-btn-approve': nameButtom === 'Next'  || '3 DAYS FREE TRIAL', 'selection_box-btn' : nameButtom !== 'Next' }"
+        >
+          {{nameButtom}}
+        </div>
+      </div>
+
+    </c-carousel>
+  </div>
+</div>

@@ -1,0 +1,218 @@
+<div class="home-container">
+  <div class="logo_container-mobile">
+    <img class="logo" src="assets/image/logo.png" alt="logo">
+    <h1 class="title">Clever Brain App</h1>
+  </div>
+
+  <section class="section_selection_games">
+    <div class="selection_games-container-fon"></div>
+    <div class="title-container selection_games-title">
+      <h3>Games for you!</h3>
+      <p>We have selected games suitable for your parameters and interests</p>
+    </div>
+
+    <div class="selection_games-container">
+      <div class="selection_games-item">
+        <img class="selection_games-item__img" src="assets/image/game-item.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="all-games-section">
+    <div class="title-container">
+      <h3>All Clever Games</h3>
+      <p>10+ games from 4 categories to develop your brain</p>
+    </div>
+
+    <ngx-slick-carousel class="carousel"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide all-games-item">
+        <img src="{{ slide.img }}" alt="" width="100%">
+      </div>
+    </ngx-slick-carousel>
+
+  </section>
+
+  <section class="analytics">
+    <div class="title-container">
+      <h3>Why Clever Brain App is the right choice?</h3>
+    </div>
+
+    <div class="analytics-container">
+      <div class="analytics-item">
+        <h3 class="analytics-item__title-first">3M+</h3>
+        <span class="analytics-item__sub-title-first">Active users</span>
+        <p class="analytics-item__description">Six empires battle for dominance of the galaxy. But you don’t control any of them.</p>
+      </div>
+      <div class="analytics-item">
+        <h3 class="analytics-item__title-second">800+</h3>
+        <span class="analytics-item__sub-title-second">Interactive Game levels</span>
+        <p class="analytics-item__description">Six empires battle for dominance of the galaxy. But you don’t control any of them.</p>
+      </div>
+      <div class="analytics-item">
+        <h3 class="analytics-item__title-last">10+</h3>
+        <span class="analytics-item__sub-title-last">Brain Games</span>
+        <p class="analytics-item__description">Six empires battle for dominance of the galaxy. But you don’t control any of them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="brain-sharp-section">
+    <div class="title-container">
+      <h3>Keep Your Brain Sharp!</h3>
+      <p>Six empires battle for dominance of the galaxy. But you don’t control any of them.</p>
+    </div>
+
+    <div class="brain-sharp-container">
+      <div class="brain-sharp-item">
+        <img src="assets/image/sharp-1.png" alt="">
+        <span>Logic</span>
+      </div>
+      <div class="brain-sharp-item">
+        <img src="assets/image/sharp-2.png" alt="">
+        <span>Memory</span>
+      </div>
+      <div class="brain-sharp-item">
+        <img src="assets/image/sharp-3.png" alt="">
+        <span>Math</span>
+      </div>
+      <div class="brain-sharp-item">
+        <img src="assets/image/sharp-4.png" alt="">
+        <span>Music</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="brain-abilities-section">
+    <div class="brain-abilities-first-container">
+      <div class="brain-abilities-first__img">
+        <img src="assets/image/brain-abilities-first-img.png" alt="">
+      </div>
+
+      <div class="brain-abilities-first__info">
+        <h4>Improve your brain abilities</h4>
+        <p><span class="orange-span">Memory.</span> Boost your memory skills to optimize you life and work activities</p>
+        <p><span class="blue-span">Logic.</span> Expand logical abilities to solve your life and work tasks</p>
+        <p><span class="red-span">Math.</span> Get along with numbers and formulas. Calculate well in different situations </p>
+        <p><span class="violet-span">Music.</span> Level up your ear playing musical games. Be like a professional musician</p>
+      </div>
+    </div>
+
+    <div class="brain-abilities-last-container">
+      <h4 class="you-progress__title">& track your progress</h4>
+      <div class="progress-container">
+        <div class="progress-container_item-first">
+          <div class="progress-container_item-first-img">
+            <img src="assets/image/progres-1.svg" alt="">
+          </div>
+          <div>
+            <img src="assets/image/progres-2.svg" alt="">
+          </div>
+        </div>
+        <div class="progress-container_item-second">
+          <img src="assets/image/progres-3.svg" alt="">
+        </div>
+        <div class="progress-container_item-last">
+          <img src="assets/image/progres-4.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-store-section">
+
+
+
+    <div class="app-store-section-fon">
+      <div class="app-store-section-fon__container">
+        <div class="screen-img">
+          <img src="assets/image/screen-app-store.png" alt="">
+        </div>
+        <div class="app-store-info">
+          <h3>Choose Your Plan</h3>
+          <div class="plan-benefits">
+            <div class="plan-benefits_item plan-benefits_item-first">
+              <img class="plan-benefits_item-image" src="assets/image/game-free-img.png" alt="">
+              <p class="plan-benefits_item-description">Games <span>FREE</span></p>
+            </div>
+            <div class="plan-benefits_item plan-benefits_item-second">
+              <img class="plan-benefits_item-image" src="assets/image/no-ads-img.png" alt="">
+              <p class="plan-benefits_item-description"><span>NO</span> ADs</p>
+            </div>
+            <div class="plan-benefits_item plan-benefits_item-last">
+              <img class="plan-benefits_item-image" src="assets/image/1k-img.png" alt="">
+              <p class="plan-benefits_item-description"><span>Premium</span> Levels</p>
+            </div>
+          </div>
+
+          <div class="plan-list">
+            <div class="plan-list_item" *ngFor="let plan of planService.planList" [ngClass]="{'plan-list_item-active' : plan.active }" (click)="planListActive(plan.id)">
+              <div class="plan-list_item-check" *ngIf="!plan.active"></div>
+              <div class="plan-list_item-check-active" *ngIf="plan.active">
+                <img src="assets/image/plan-active-check.png" alt="">
+              </div>
+              <div class="plan-list_item-title">{{plan.title}}</div>
+              <div class="plan-list_item-additional_information" *ngIf="plan.additional_information">
+                {{plan.additional_information}}
+              </div>
+              <div class="plan-list_item-description">{{plan.description}}</div>
+              <div class="plan-list_item-price">
+                <div class="plan-list_item-price-currency">{{plan.price.currency}}</div>
+                <div class="plan-list_item-price-dollars">{{plan.price.dollars}}</div>
+                <div class="plan-list_item-price-cents-and-period">
+                  <div class="plan-list_item-price-cents">{{plan.price.cents}}</div>
+                  <div class="plan-list_item-price-period">{{plan.price.period}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="get-my-plan-btn">
+            <div class="get-my-plan-btn_bg"></div>
+            <span [routerLink]="['/payment']" [queryParams]="{ plan: activePlanId }">get my plan</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="description-price">
+        <p class="description-price__content" *ngFor="let plan of planService.planList">
+          <span *ngIf="plan.active">
+            To avoid any disruption, you agree that the subscription you selected will automatically be extended for a successive renewal period of {{plan?.reset_price.period}} and at the full, not discounted, price of {{plan?.reset_price.currency}}{{plan?.reset_price.dollars}}.{{plan?.reset_price.cents}}. To learn more visit our <span (click)="termsLink()">Cancellation terms</span>.
+          </span>
+        </p>
+        <p class="description-price__checkout">Guaranteed Safe Checkout</p>
+        <div class="description-price__card-icon">
+          <img src="assets/icon/master-card.png">
+          <img src="assets/icon/visa.png">
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <footer class="footer">
+    <p>© 2023 A.S GRAND MOBILE VENTURES LIMITED, LLC. All rights reserved. Apple, the Apple logo, iPhone, iPad, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. All other trademarks are the property of their respective owners.</p>
+    <div class="about-home">
+      <div class="about-home__content">
+        <h5>About Us:</h5>
+        <p>A.S Grand Mobile Ventures Limited</p>
+        <p>7 Florinis, Greg Tower, 2nd Floor</p>
+        <p>Nicosia 1065</p>
+        <p>Cyprus</p>
+        <p>VAT: 10389483K</p>
+      </div>
+      <div class="about-home__content">
+        <h5>Contact Us:</h5>
+        <p>Merchant is regulated by the HE389483</p>
+      </div>
+    </div>
+    <div class="privacy_container">
+      <span (click)="privacyLink()" >Privacy Policy</span>
+      <span (click)="termsLink()" >Terms and Conditions</span>
+    </div>
+  </footer>
+</div>
+

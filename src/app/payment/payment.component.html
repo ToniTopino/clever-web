@@ -1,0 +1,58 @@
+<div class="payment">
+  <div class="payment_container">
+    <div class="logo-container">
+      <img src="assets/image/logo.png" alt="">
+      <h3>Clever Brain App</h3>
+    </div>
+    <div class="card-details-title">
+      <h3>Enter card details</h3>
+    </div>
+    <div class="card-data">
+      <div class="card-number">
+        <span>Card number</span>
+        <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+        <img src="assets/icon/card-front.png" alt="">
+      </div>
+      <div class="card-number-details">
+        <div class="card-expires">
+          <span>Card expires</span>
+          <input type="text" placeholder="MM / YY" (keyup)="cardExpires($event)" [(ngModel)]="cardExpiresData">
+        </div>
+        <div class="security-number">
+          <span>Security number</span>
+          <input type="text" placeholder="CVC">
+          <img src="assets/icon/card-back.png" alt="">
+        </div>
+      </div>
+      <div class="card-email">
+        <span>Email</span>
+        <input type="text" placeholder="Enter your email">
+      </div>
+    </div>
+    <button class="pay-button-container" disabled>
+      <span class="pay-button">Get my plan</span>
+    </button>
+    <div class="total-price-container">
+      <span>Total price:</span>
+      <span>{{planService.activePlan.price}}</span>
+    </div>
+    <div class="info-pay-container">
+      <p>By continuing, you agree with the <span (click)="termsLink()">Terms & Conditions</span> and <span (click)="privacyLink()">Privacy Policy</span></p>
+      <p>By continuing, you agree that if you don’t cancel at least 24 hours prior to the end of the first renewal period, you will automatically be charged the full price of {{planService.activePlan.description_start}} <b>{{planService.activePlan.description}}</b> {{planService.activePlan.description_end}} until you cancel.</p>
+    </div>
+    <div class="about-home">
+      <div class="about-home__content">
+        <h5>About Us:</h5>
+        <p>A.S Grand Mobile Ventures Limited</p>
+        <p>7 Florinis, Greg Tower, 2nd Floor</p>
+        <p>Nicosia 1065</p>
+        <p>Cyprus</p>
+        <p>VAT: 10389483K</p>
+      </div>
+      <div class="about-home__content">
+        <h5>Contact Us:</h5>
+        <p>Merchant is regulated by the HE389483</p>
+      </div>
+    </div>
+  </div>
+</div>

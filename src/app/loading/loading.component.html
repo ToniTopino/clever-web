@@ -1,0 +1,16 @@
+<div class="loading_container">
+  <round-progress
+    [current]="current"
+    [max]="100"
+    [color]="'#288EEF'"
+    [background]="'#288eef3d'"
+    [radius]="100"
+    [stroke]="5"
+    [rounded]="true"
+  ></round-progress>
+  <span class="number_loader">
+    {{current}}
+    <span class="number_loader-percent">%</span>
+  </span>
+  <span class="info_loading">{{processTitle}}</span>
+</div>

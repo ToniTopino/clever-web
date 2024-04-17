@@ -1,0 +1,1121 @@
+.home-container {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100%;
+}
+
+.home-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.section_selection_games {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  height: 90%;
+  h3 {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  p {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #E1E1F0;
+    opacity: 0.8;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.selection_games-title {
+  padding-top: 130px;
+}
+
+.selection_games-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 55px;
+  position: relative;
+  h4 {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+
+.selection_games-container-fon {
+  position: absolute;
+  width: 100%;
+  background-image: url("/assets/image/game-fon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 92.5%;
+  top: 70px;
+}
+
+.selection_games-item__img {
+  width: 500px;
+  cursor: pointer;
+}
+
+.selection_games-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+  img {
+    width: 40px;
+  }
+  span {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #2595FF;
+    margin-left: 9px;
+  }
+}
+
+.selection_games-item__description {
+  font-family: 'Signika', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #E1E1F0;
+  opacity: 0.88;
+  width: 378px;
+  margin-top: 13px;
+}
+
+.all-games-section {
+  width: 100%;
+  padding-bottom: 106px;
+  background: linear-gradient(0deg, #0D0D1B 81%, rgba(13, 13, 27, 0) 100%);
+}
+
+.all-games-item {
+  width: 261px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 25px;
+  img {
+    width: 100%;
+  }
+  span {
+    margin-top: 16px;
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+}
+
+.all-games-item:last-child {
+  margin-right: 0px;
+}
+
+.analytics {
+  background: #131325;
+  padding-top: 64px;
+  padding-bottom: 110px;
+}
+
+.analytics-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 64px;
+}
+
+.analytics-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  margin-right: 47px;
+  padding: 0 3px 0 3px;
+}
+
+.analytics-item:last-child {
+  margin-right: 0px;
+}
+
+.analytics-item__title-first {
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 99px;
+  text-align: center;
+  color: #9A32EC;
+}
+
+.analytics-item__sub-title-first{
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #9A32EC;
+}
+
+.analytics-item__title-second {
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 99px;
+  text-align: center;
+  color: #FC8B06;
+}
+
+.analytics-item__sub-title-second {
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #FC8B06;
+}
+
+.analytics-item__title-last {
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 99px;
+  text-align: center;
+  color: #95CC01;
+}
+
+.analytics-item__sub-title-last {
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #95CC01;
+}
+
+.analytics-item__description {
+  font-family: 'Signika', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #E1E1F0;
+  opacity: 0.88;
+  margin-top: 16px;
+}
+
+.carousel {
+  margin-top: 64px;
+  cursor: pointer;
+}
+
+.brain-sharp-section {
+  width: 100%;
+  padding-top: 74px;
+  padding-bottom: 109px;
+  background-image: url('../../assets/image/brain-sharp-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.brain-sharp-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 68px;
+}
+
+.brain-sharp-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  img {
+    width: 145px;
+    height: 150px;
+  }
+  span {
+    margin-top: 21px;
+  }
+}
+
+.brain-sharp-item:last-child {
+  margin-right: 0px;
+}
+
+.brain-sharp-item > span {
+  font-family: 'Signika', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2595FF;
+}
+
+.brain-sharp-item:nth-child(2) span {
+  color: #FC8B06;
+}
+
+.brain-sharp-item:nth-child(3) span {
+  color: #E42749;
+}
+
+.brain-sharp-item:nth-child(4) span {
+  color: #9A32EC;
+}
+
+.brain-abilities-section {
+  width: 100%;
+  background: #0D0D1B;
+  padding-bottom: 116px;
+}
+
+.brain-abilities-first-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 94px;
+  padding-bottom: 123px;
+}
+
+.brain-abilities-first__img {
+  width: 467px;
+  img {
+    width: 100%;
+  }
+}
+
+.brain-abilities-first__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 398px;
+  margin-left: 33px;
+  h4{
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+  p {
+    margin: 0 0 32px 0;
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    opacity: 0.88;
+  }
+  .orange-span {
+    color: #FC8B06;
+    font-weight: 600;
+  }
+  .blue-span {
+    color: #0083FF;
+    font-weight: 600;
+  }
+  .red-span {
+    font-weight: 600;
+    color: #E42749;
+  }
+  .violet-span {
+    font-weight: 600;
+    color: #9A32EC;
+  }
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+}
+
+.brain-abilities-last-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .you-progress__title {
+    padding-bottom: 48px;
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.progress-container_item-first {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-container_item-first-img {
+  margin-bottom: 9.4px;
+}
+
+.progress-container_item-second {
+  margin: 0 8px;
+}
+
+.about-home {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 20%;
+  .about-home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      text-align: left;
+      color: #ffffff;
+      width: auto;
+      margin: 0;
+      opacity: 0.4;
+      font-size: 14px;
+    }
+    h5 {
+      color: #ffffff;
+      margin-bottom: 10px;
+      opacity: 0.9;
+      font-size: 16px;
+    }
+  }
+}
+
+.app-store-section {
+  width: 100%;
+  background: linear-gradient(180deg, #0D0D1B 0%, rgba(13, 13, 27, 0) 60%);
+  .app-store-section-fon {
+    background-image: url("../../assets/image/app-store-sect-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 36px;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .app-store-section-fon__container {
+    display: flex;
+    justify-content: center;
+  }
+  .description-price {
+    width: 902px;
+    text-align: center;
+    margin-top: 57px;
+    p {
+      margin-bottom: 0;
+    }
+    .description-price__content {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      opacity: 0.64;
+      span>span {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .description-price__checkout {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      opacity: 0.64;
+      margin: 24px 0 10px;
+    }
+    .description-price__card-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 48px;
+      }
+      img:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+  .screen-img {
+    width: 349px;
+    margin-right: 45px;
+    img {
+      width: 100%;
+    }
+  }
+  .app-store-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo-footer {
+      width: 108px;
+    }
+    h3 {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin: 32px 0 48px;
+      text-align: center;
+    }
+    .logo-app-store {
+      width: 160px;
+      margin-top: 48px;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  background: #0D0D1B;
+  padding: 31px 0px 37px;
+  display: flex;
+  justify-content: center;
+  --cui-footer-border-color: none;
+  p {
+    width: 899px;
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #E1E1F0;
+    opacity: 0.4;
+  }
+}
+
+.privacy_container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 200px 20px;
+  span {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #E1E1F0;
+    cursor: pointer;
+  }
+}
+
+.logo_container-mobile {
+  display: none;
+}
+
+.game-title {
+  img, span {
+    display: none;
+  }
+}
+
+.plan-benefits {
+  display: flex;
+  align-items: center;
+  width: 465px;
+  justify-content: space-between;
+  .plan-benefits_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    .plan-benefits_item-description {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+      margin: 0;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .plan-benefits_item-first {
+    .plan-benefits_item-image {
+      width: 78px;
+      padding-top: 6px;
+    }
+  }
+  .plan-benefits_item-second {
+    .plan-benefits_item-image {
+      width: 48px;
+    }
+  }
+  .plan-benefits_item-last {
+    .plan-benefits_item-image {
+      padding-top: 5px;
+      width: 77px;
+    }
+  }
+}
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 53px;
+  .plan-list_item {
+    position: relative;
+    width: 504px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 0 12px;
+    background: #000000;
+    opacity: 0.8;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    .plan-list_item-check {
+      width: 24px;
+      height: 24px;
+      opacity: 0.24;
+      border: 1px solid #F7F7FC;
+      border-radius: 50%;
+    }
+    .plan-list_item-title {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: #EAECF4;
+      padding-right: 60px;
+    }
+    .plan-list_item-additional_information {
+      position: absolute;
+      left: 186px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1px 8px;
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+      color: #E3BF00;
+    }
+    .plan-list_item-description {
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #EAECF4;
+      opacity: 0.4;
+      padding-top: 48px;
+    }
+    .plan-list_item-price {
+      width: 106px;
+      height: 68px;
+      border-radius: 12px;
+      background-image: url("./../../assets/image/price-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Signika', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 5px;
+      .plan-list_item-price-currency {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #F7F7FC;
+        opacity: 0.48;
+        margin-top: -18px;
+      }
+      .plan-list_item-price-dollars {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 24px;
+        color: #F7F7FC;
+        opacity: 0.48;
+      }
+      .plan-list_item-price-cents-and-period {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3px;
+        .plan-list_item-price-cents {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          color: #FFFFFF;
+          opacity: 0.48;
+          margin-top: -2px;
+        }
+        .plan-list_item-price-period {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #F7F7FC;
+          opacity: 0.4;
+          margin-top: -6px;
+        }
+      }
+    }
+  }
+  .plan-list_item-active {
+    border: 2px solid #FFFFFF;
+    background: linear-gradient(180deg, #49B3FF 0%, #0075FF 100%);
+    opacity: 1;
+    padding-right: 4px;
+    padding-left: 11px;
+    .plan-list_item-description {
+      opacity: 1;
+    }
+    .plan-list_item-additional_information{
+      color: #f5ce01;
+      left: 185px;
+    }
+    .plan-list_item-check-active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px #9832FF95;
+  }
+  100% {
+    box-shadow: 0 0 0 15px #9832FF00;
+  }
+}
+
+.get-my-plan-btn {
+  font-family: 'Signika', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 32px;
+  margin-top: 25px;
+  width: 320px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 99999;
+  span {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(90deg, #C447FF 0%, #9832FF 98.42%);
+    border-radius: 32px;
+  }
+}
+
+.get-my-plan-btn_bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #C447FF 0%, #9832FF 98.42%);
+  border-radius: 32px;
+  position: absolute;
+  z-index: 0;
+  animation-duration: 1500ms;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 1440px) {
+  .title-container{
+    p {
+      font-size: 18px;
+      margin-top: 14px;
+    }
+  }
+  .selection_games-container {
+    margin-top: 30px;
+    h4 {
+      margin-top: 8px;
+      font-size: 28px;
+    }
+  }
+  .selection_games-item__img {
+    width: 500px;
+  }
+  .selection_games-item__description{
+    font-size: 18px;
+    width: 345px;
+  }
+  .footer {
+    padding-bottom: 10px;
+  }
+  .brain-sharp-item{
+    img{
+      width: 135px;
+      height: 140px;
+    }
+  }
+  .analytics-item__title-first,
+  .analytics-item__title-second,
+  .analytics-item__title-last {
+    font-size: 75px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .privacy_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .logo_container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    .logo {
+      width: 48px;
+    }
+    .title {
+      color: #EAECF4;
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 22px;
+      margin-left: 10px;
+    }
+  }
+  .section_selection_games {
+    padding-top: 20px;
+  }
+  .title-container{
+    h3 {
+     font-size: 32px;
+    }
+  }
+  .about-home{
+    padding: 0 15px;
+    p {
+      padding-right: 10px;
+    }
+  }
+  .selection_games-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .selection_games-item {
+    margin-left: 0;
+    margin-top: 95px;
+    padding: 0 20px;
+  }
+  .selection_games-item__img {
+    width: 100%;
+  }
+  .analytics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .analytics-item {
+    margin-right: 0;
+    margin-top: 32px;
+  }
+  .brain-abilities-section {
+    padding-bottom: 74px;
+  }
+  .brain-sharp-container {
+    flex-wrap: wrap;
+  }
+  .brain-abilities-first-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .brain-abilities-first__info {
+    margin-left: 0;
+    margin-top: 23px;
+    h4 {
+      text-align: center;
+    }
+  }
+  .progress-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .progress-container_item-first, .progress-container_item-second {
+    margin-bottom: 10px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .app-store-section-fon {
+    flex-direction: column;
+    align-items: center;
+  }
+  .app-store-section{
+    .app-store-section-fon {
+      padding-top: 41px;
+    }
+    .app-store-info{
+      padding-top: 58px;
+      align-items: center;
+      width: 100%;
+      .logo-footer {
+        display: none;
+      }
+      .logo-app-store {
+        margin-bottom: 50px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .screen-img {
+      margin-right: 0;
+    }
+  }
+  .selection_games-container-fon {
+    top: -70px;
+    height: 90%;
+  }
+  .plan-benefits {
+    width: 100%;
+    .plan-benefits_item {
+      .plan-benefits_item-description {
+        font-size: 18px;
+      }
+    }
+  }
+  .plan-list {
+    width: 100%;
+    padding: 0 14px;
+    .plan-list_item {
+      width: 100%;
+      height: 84px;
+      .plan-list_item-title {
+        padding-right: 0;
+        width: 56%;
+        text-align: left;
+      }
+      .plan-list_item-description {
+        position: absolute;
+        left: 100px;
+      }
+      .plan-list_item-additional_information {
+        left: 12%;
+        top: 6px;
+      }
+    }
+  }
+  .get-my-plan-btn {
+    width: 326px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .brain-sharp-container {
+    justify-content: space-around;
+  }
+  .brain-sharp-item {
+    margin-right: 0;
+  }
+  .title-container {
+    p {
+      padding: 0 14px;
+    }
+    h3 {
+      line-height: initial;
+    }
+  }
+  .brain-abilities-first__img {
+    padding: 0 14px;
+    width: auto;
+  }
+  .brain-abilities-first__info{
+    width: 100%;
+    padding: 0 14px;
+    h4 {
+      line-height: inherit;
+    }
+  }
+  .footer{
+    p {
+      padding: 0;
+    }
+  }
+  footer {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .app-store-section{
+    .app-store-info{
+      p {
+        width: 100%;
+        padding: 0 14px;
+      }
+    }
+  }
+  .brain-container {
+    display: none;
+  }
+  .game-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      display: block;
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: capitalize;
+      color: #2595FF;
+    }
+    img{
+      display: block;
+      width: 40px;
+      margin-left: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .brain-sharp-item {
+    width: 50%;
+    padding-bottom: 40px;
+  }
+  .selection_games-item{
+    width: 100%;
+    margin-top: 100px;
+  }
+  .brain-abilities-first__info {
+    margin-top: 50px;
+  }
+  .brain-sharp-section {
+    padding-bottom: 20px;
+    background-position: bottom;
+  }
+  .privacy_container {
+    padding-bottom: 50px;
+  }
+  .selection_games-title {
+    padding-top: 15px;
+  }
+  .selection_games-container {
+    margin-top: 0;
+  }
+  .app-store-section-fon__container {
+    flex-direction: column;
+  }
+  .app-store-section {
+    .description-price {
+      width: 100%;
+      padding: 0 14px 0 16px;
+    }
+  }
+}

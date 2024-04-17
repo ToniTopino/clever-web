@@ -1,0 +1,147 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background: #090A15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Signika', sans-serif;
+  position: absolute;
+  z-index: 99999999999999;
+  --cui-header-border-color: none;
+  .logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      width: 50px;
+    }
+
+    .title {
+      color: #EAECF4;
+      font-family: 'Signika', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 22px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.background_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0D0D1B;
+  background-image: url("/assets/image/back-image.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  .background_container-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #0D0D1B 0%, rgba(13, 13, 27, 0) 50.06%);
+    transform: rotate(-180deg);
+  }
+}
+
+.router-outlet {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.download_btn {
+  position: absolute;
+  width: 244px;
+  height: 48px;
+  background: linear-gradient(90deg, #C447FF 0%, #9832FF 98.42%);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  right: 40px;
+  cursor: pointer;
+  img {
+    width: 20px;
+    margin-right: 8px;
+  }
+  span {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .header {
+    height: 70px;
+    .logo_container {
+      .logo {
+        width: 42px;
+      }
+      .title {
+        font-size: 24px;
+      }
+    }
+  }
+  .survey_container__item{
+    .number_survey-info{
+      .number_list {
+        font-size: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    .download_btn {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+    height: 60px;
+    background: #090A15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika', sans-serif;
+    position: absolute;
+    z-index: 99999999999999;
+    --cui-header-border-color: none;
+    .logo_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .logo {
+        width: 30px;
+      }
+
+      .title {
+        color: #EAECF4;
+        font-family: 'Signika', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 22px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
