@@ -225,8 +225,11 @@ export class SurveyComponent implements OnInit {
 
     if ($event === 7) {
       this.controlNext = false;
-      this.nameButtom = 'TRY FREE & UNLOCK';
-
+      if (this.surveyService.fiveSurvey[0].active) {
+        this.nameButtom = 'TRY FREE & UNLOCK';
+      } else {
+        this.nameButtom = 'NEXT';
+      }
     }
   }
 

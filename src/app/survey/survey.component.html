@@ -12,7 +12,7 @@
       transition="crossfade"
       [activeIndex]=activeIndexCarouselFirst
     >
-    <div class="">
+    <div class="number_survey_container">
       <div class="number_survey">
         <div class="number_survey-line"></div>
         <div class="number_survey__level-line" [style.width.%]="width"></div>
@@ -48,6 +48,8 @@
             <img src="assets/image/Pic-1@2x.png" alt="">
           </div>
 
+
+
         </c-carousel-item>
         <c-carousel-item>
 
@@ -59,6 +61,7 @@
             <img src="assets/image/Pic-2@2x.png" alt="">
           </div>
 
+
         </c-carousel-item>
         <c-carousel-item>
 
@@ -69,6 +72,7 @@
           <div class="survey_container__item-first_image">
             <img src="assets/image/Pic-3@2x.png" alt="">
           </div>
+
 
         </c-carousel-item>
 
@@ -221,7 +225,7 @@
          &
         <span (click)="privacyLink()">Privacy Policy</span>
       </div>
-      <c-carousel-control *ngIf="controlNext" caption="Next" direction="next" (click)="nextActiveIndexCarouselFirst()">
+      <c-carousel-control class="c-carousel-control_footer" *ngIf="controlNext" caption="Next" direction="next" (click)="nextActiveIndexCarouselFirst()">
         <div
           class="selection_box-btn-approve"
           [ngClass]="{'selection_box-btn-approve': nameButtom === 'Next', 'selection_box-btn' : nameButtom !== 'Next' || '3 DAYS FREE TRIAL' }"

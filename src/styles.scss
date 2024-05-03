@@ -12,6 +12,11 @@
   -webkit-user-select: none;
   user-select: none;
 }
+c-carousel-item::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
 body {
   overflow: hidden;
 }
